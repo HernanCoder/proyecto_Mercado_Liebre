@@ -130,10 +130,11 @@ img{
     padding: 15px 0px 15px 0px;
     max-width: 90%;
     background-color: white;
+    height: fit-content;
     transition: all 350ms;
 }
 .articulos:hover{
-    box-shadow: 20px 20px 20px rgb(91, 91, 91);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .imagenes_producto{
@@ -196,40 +197,12 @@ img{
     color: #39b54a;
 }
 
-/*
-@keyframes apareciendo{
-    0%{
-        display: none;
-    }
-    33%{
-        font-size: 8px;
-        color:rgb(173, 173, 173)
-    }
-    66%{
-        font-size: 12px;
-        color:rgb(141, 140, 140)
-    }
-    100%{
-        font-size: 16px;
-        color: #666
-    }
-}*/
 .descripciones{
     display: none;  
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #666;
-    /*animation-name: apareciendo;
-    animation-duration: 3000ms;
-    animation-iteration-count: initial;
-    animation-direction: alternate;*/
-    /*transition: all 450ms;*/
 }
-
-/*.descripciones:hover{
-    display: initial;
-    color: red;
-} */
 
 
 
@@ -406,10 +379,19 @@ h4{
         max-width:90%;
         margin: 0% 5% 5% 5%;
     }    
-
-    .descripciones{
+    
+    .articulos:hover{
+        box-shadow: 10px 10px 10px rgb(100,100,100);
+    }
+    
+    .articulos:hover .descripciones{
         display: initial;
-    }  
+    }
+    
+    .info_producto:hover .camioncito{
+        right: 10% ;
+        top: -20% ;
+    }
 
     .precio_final{
         margin-left: 0%;
