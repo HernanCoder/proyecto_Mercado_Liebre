@@ -21,7 +21,7 @@ app.get('/', (req,res) => {
 });
 
 app.get('/home.html', (req,res) => {
-    res.sendFile(path.resolve(__dirname,'./views/home.html'));
+    res.sendFile(path.join(__dirname,'./views/home.html'));
 });
 
 app.get('/login.html', (req,res) => {
